@@ -1,14 +1,20 @@
-#include "stm32f4xx.h"
-#include "delay.h"
-#include "timer.h"
-#include "mpu6050.h"
+#include "main.h"
+
 
 int main()
 {
-  delay_init(10);
-	TIM3_OC_Init();
 	NVIC_PriorityGroupConfig(0x02);
+	TIM3_OC_Init();	
   MPU6050_Init();
+	TIM6_DELAY_Init();
+	TIM7_PIDControl_Init();	
+	MOTOR_820r_Init();
+	REMOTE_Init();
+  MOTOR_6223Init();
 
-	while(1);
+	while(1)
+	{
+		Control();		
+	//	TIM6_delay(10);
+	}
 }

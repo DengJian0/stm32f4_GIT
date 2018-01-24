@@ -1,6 +1,6 @@
 ..\obj\timer.o: ..\SYSTEM\timer\timer.c
 ..\obj\timer.o: ..\SYSTEM\timer\timer.h
-..\obj\timer.o: ..\SYSTEM\sys\sys.h
+..\obj\timer.o: ..\USER\main.h
 ..\obj\timer.o: ..\USER\stm32f4xx.h
 ..\obj\timer.o: ..\CORE\core_cm4.h
 ..\obj\timer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -36,3 +36,14 @@
 ..\obj\timer.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\timer.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\timer.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
+..\obj\timer.o: ..\SYSTEM\delay\delay.h
+..\obj\timer.o: ..\SYSTEM\sys\sys.h
+..\obj\timer.o: ..\SYSTEM\timer\timer.h
+..\obj\timer.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\timer.o: ..\HARDWARE\CAN\can.h
+..\obj\timer.o: ..\USER\main.h
+..\obj\timer.o: ..\HARDWARE\REMOTE\remote.h
+..\obj\timer.o: ..\SYSTEM\control\control.h
+..\obj\timer.o: ..\SYSTEM\pid\pid.h
+..\obj\timer.o: ..\HARDWARE\MOTOR_820R\motor_820r.h
+..\obj\timer.o: ..\HARDWARE\MOTOR_6223\motor6223.h

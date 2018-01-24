@@ -1,4 +1,5 @@
 ..\obj\main.o: main.c
+..\obj\main.o: main.h
 ..\obj\main.o: stm32f4xx.h
 ..\obj\main.o: ..\CORE\core_cm4.h
 ..\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -37,4 +38,11 @@
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\SYSTEM\timer\timer.h
+..\obj\main.o: ..\USER\main.h
 ..\obj\main.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\main.o: ..\HARDWARE\CAN\can.h
+..\obj\main.o: ..\HARDWARE\REMOTE\remote.h
+..\obj\main.o: ..\SYSTEM\control\control.h
+..\obj\main.o: ..\SYSTEM\pid\pid.h
+..\obj\main.o: ..\HARDWARE\MOTOR_820R\motor_820r.h
+..\obj\main.o: ..\HARDWARE\MOTOR_6223\motor6223.h

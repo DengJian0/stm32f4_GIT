@@ -38,3 +38,14 @@
 ..\obj\surgewheel.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\surgewheel.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\surgewheel.o: ..\SYSTEM\timer\timer.h
+..\obj\surgewheel.o: ..\USER\main.h
+..\obj\surgewheel.o: ..\SYSTEM\delay\delay.h
+..\obj\surgewheel.o: ..\SYSTEM\timer\timer.h
+..\obj\surgewheel.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\surgewheel.o: ..\HARDWARE\CAN\can.h
+..\obj\surgewheel.o: ..\USER\main.h
+..\obj\surgewheel.o: ..\HARDWARE\REMOTE\remote.h
+..\obj\surgewheel.o: ..\SYSTEM\control\control.h
+..\obj\surgewheel.o: ..\SYSTEM\pid\pid.h
+..\obj\surgewheel.o: ..\HARDWARE\MOTOR_820R\motor_820r.h
+..\obj\surgewheel.o: ..\HARDWARE\MOTOR_6223\motor6223.h

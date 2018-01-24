@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\FWLIB\inc;..\SYSTEM\timer;..\HARDWARE\SURDEWHEEL;..\HARDWARE\MPU6050</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\FWLIB\inc;..\SYSTEM\timer;..\HARDWARE\SURDEWHEEL;..\HARDWARE\MPU6050;..\HARDWARE\CAN;..\HARDWARE\REMOTE;..\HARDWARE\MOTOR_820R;..\SYSTEM\pid;..\SYSTEM\control;..\USER;..\HARDWARE\MOTOR_6223</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -444,79 +444,14 @@
               <FilePath>..\FWLIB\src\misc.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_adc.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_can.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_can.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_crc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_crc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp_aes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp_aes.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp_des.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp_des.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp_tdes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp_tdes.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dac.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dac.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dbgmcu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dbgmcu.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dcmi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dcmi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dma2d.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dma2d.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_dma.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_exti.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_flash.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_flash_ramfunc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_flash_ramfunc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_fsmc.c</FileName>
@@ -529,74 +464,9 @@
               <FilePath>..\FWLIB\src\stm32f4xx_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_hash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_hash.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_hash_md5.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_hash_md5.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_hash_sha1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_hash_sha1.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_i2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_i2c.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_iwdg.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_ltdc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_ltdc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_pwr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_pwr.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_rcc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_rng.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_rng.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_rtc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_sai.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_sai.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_sdio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_sdio.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_syscfg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_syscfg.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_tim.c</FileName>
@@ -608,35 +478,25 @@
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_usart.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32f4xx_wwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_wwdg.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>SYSTEM</GroupName>
           <Files>
             <File>
-              <FileName>delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\delay\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>sys.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\sys\sys.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\usart\usart.c</FilePath>
-            </File>
-            <File>
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\SYSTEM\timer\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\pid\pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\control\control.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -662,6 +522,26 @@
               <FileName>mpu6050.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\MPU6050\mpu6050.c</FilePath>
+            </File>
+            <File>
+              <FileName>can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\CAN\can.c</FilePath>
+            </File>
+            <File>
+              <FileName>remote.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\REMOTE\remote.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor_820r.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\MOTOR_820R\motor_820r.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor6223.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\MOTOR_6223\motor6223.c</FilePath>
             </File>
           </Files>
         </Group>
