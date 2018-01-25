@@ -36,9 +36,9 @@ POSIT_PID gl_wheelLR_PositPid=
 	0,//  err_last
 	0,// derror
 	
-	10,//kp
-	0.8,//ki
-	1,//kd
+	10,//kp 
+	0.8,//ki 
+	1,//kd    
 	
 	1,//ki_index
 	
@@ -114,8 +114,8 @@ POSIT_PID gl_gambilPitch_PositPid=
 	0,//  err_last
 	0,// derror
 	
-	1,//kp  10
-	0.1,//ki  0.8
+	1,//kp  1
+	0.1,//ki  0.1
 	1,//kd   1
 	
 	1,//ki_index
@@ -128,6 +128,60 @@ POSIT_PID gl_gambilPitch_PositPid=
 	0,
 	0,
 	0,
+};
+
+
+
+POSIT_PID gl_gambil_PitchCur_PositPid=
+{
+	0,//SET
+  0,//ACT
+
+  0,//  err_now
+	0,//  err_last
+	0,// derror
+	
+	0,//kp  1
+	0,//ki  0.1
+	1,//kd   1
+	
+	1,//ki_index
+	
+	0,//integral
+	
+	0,//ctrlout
+	500,//Imax	
+	
+	0,
+	0,
+	0,
+	
+};
+
+POSIT_PID gl_gambil_PitchAng_PositPid=
+{
+  0,//SET
+  0,//ACT
+
+  0,//  err_now
+	0,//  err_last
+	0,// derror
+	
+	1,//kp  1
+	0.1,//ki  0.1
+	1,//kd   1
+	
+	1,//ki_index
+	
+	0,//integral
+	
+	0,//ctrlout
+	500,//Imax	
+	
+	0,
+	0,
+	0,	
+	
 };
 
 float Posit_PID_Conver(POSIT_PID* gl_wheelx_PositPid)

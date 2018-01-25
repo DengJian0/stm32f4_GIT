@@ -15,6 +15,6 @@ int main()
 	while(1)
 	{
 		Control();		
-	//	TIM6_delay(10);
+		TIM6_delay(10);
 	}
 }

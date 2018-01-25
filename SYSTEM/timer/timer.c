@@ -94,7 +94,7 @@ void TIM7_PIDControl_Init()
 
 
 
-int ctrLF=0,ctrRF=0,ctrLR=0,ctrRR=0;
+int ctrLF=0,ctrRF=0,ctrLR=0,ctrRR=0,ctrYAW=0,ctrPITCH=0;
 int ctrgambilP=0;
 
 extern POSIT_PID gl_wheelLF_PositPid;
@@ -111,7 +111,7 @@ int Angle_Last=0,Angle_Now=0,Angle_dCge=0,Angle_ICge=0,Origin=0;
 u8 first=1;
 
 ////////////////////////////
-u8 dataPass[8]={10,10,10,10};
+//int YAW=0,PITCH=0;
 
 //////////////////////////////
 
@@ -119,13 +119,6 @@ void TIM7_IRQHandler()
 {
 	if(TIM_GetITStatus(TIM7,TIM_IT_Update)!=RESET)
 	{	
-
-
-	///////////////////////////////
-	 CAN2_SEND_MSG(dataPass,8);
-//////////////////////////////////
-
-		
 	  if(RC_Ctl.rc.s1==3)  //正常模式		
 		{
 		// 采集速度		
@@ -141,6 +134,11 @@ void TIM7_IRQHandler()
 			
 				MOTOR_820rWheel(ctrLF,ctrRF,ctrLR,ctrRR);           //
 				//进行PID控制
+////////////////////////////////////////////////////////////
+			
+			
+			MOTOR_6223Gambil(ctrPITCH,ctrYAW);
+////////////////////////////////////////////////////////////
 		}
 		else if(RC_Ctl.rc.s1==2) //位置闭环测试模式
 		{

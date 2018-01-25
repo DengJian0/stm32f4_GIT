@@ -31,7 +31,7 @@ void Control(void)
 		carSpeedy=1024-RC_Ctl.rc.ch1;
 		carSpeedw=1024-RC_Ctl.rc.ch2;
 		
-//		carGambilp=RC_Ctl.rc.ch3-1024;
+		carGambilp=RC_Ctl.rc.ch3-1024;
 //麦克纳姆轮速度分解		
 		setLF=	speedFACTOR*(-carSpeedy - carSpeedx - carSpeedw);
 		setLR=  speedFACTOR*(-carSpeedy + carSpeedx - carSpeedw);
@@ -47,7 +47,7 @@ void Control(void)
 		gl_wheelRF_PositPid.SET_POINT=setRF;
 		gl_wheelRR_PositPid.SET_POINT=setRR;
 
-//    gl_gambilPitch_PositPid.SET_POINT = AngleFACTOR*carGambilp;	
+    gl_gambilPitch_PositPid.SET_POINT = AngleFACTOR*carGambilp;	
 	//电机的PID控制，改变setpoint	
 	}
 	else if(RC_Ctl.rc.s1==2)//位置闭环测试模式
